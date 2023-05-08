@@ -1,0 +1,120 @@
+@media (max-width: 768px) {
+  header, main, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    padding: 0;
+  }
+  a {
+    color: white;
+    font-size: 22px;
+    padding: 5px;
+    margin: 5px;
+  }
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  color: white;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+.titulo {
+  display: flex;
+  text-align: center;
+}
+
+.Pcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.bg-principal {
+  background-color: #008148;
+}
+
+.image-desktop, .noticias {
+  padding-bottom: 5px;
+}
+
+.card {
+  background-color: #fafafb;
+  border: 1px;
+  border-radius: 20px;
+  padding: 3px;
+  margin: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+  main {
+    display: grid;
+    grid-template-areas: "titulo titulo titulo" "img-desktop img-desktop img-desktop" "noticias noticias noticias" "CIz CM CDr";
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+  }
+  .image-desktop {
+    grid-area: img-desktop;
+  }
+  .noticias {
+    grid-area: noticias;
+  }
+  .titulo {
+    grid-area: titulo;
+    justify-content: center;
+  }
+  .card-plantilla {
+    grid-area: CIz;
+  }
+  .card-noticias {
+    grid-area: CM;
+  }
+  .card-productos {
+    grid-template-areas: CDr;
+  }
+  ul, header, footer {
+    display: flex;
+  }
+  a {
+    color: white;
+    font-size: 28px;
+    padding: 5px;
+    margin: 10px;
+  }
+  .just-content-spa-betw {
+    justify-content: space-between;
+  }
+  .align-items-center {
+    align-items: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
