@@ -16,15 +16,12 @@
     main{
         display: grid;
         grid-template-areas:
-            "titulo titulo titulo"
-            "img-desktop img-desktop img-desktop"
             "noticias noticias noticias"
+            "titulo titulo titulo"
             "CIz CM CDr";
-        grid-template-columns: repeat(3,auto);
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(4, auto);
-    }
-    .image-desktop{
-        grid-area:img-desktop;
+        grid-column-gap: 10px;
     }
     .noticias{
         grid-area: noticias;
@@ -45,9 +42,9 @@
     
     a{
         color:white;
-        font-size:22px;
-        padding:5px;
-        margin:10px;
+        font-size: 28px;
+        padding: 5px;
+        margin: 10px;
     }
 
     footer{display:flex;

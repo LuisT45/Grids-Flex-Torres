@@ -10,13 +10,12 @@
   }
   a {
     color: white;
-    font-size: 30px;
+    font-size: 22px;
     padding: 5px;
     margin: 5px;
   }
-  .img-fluid {
-    width: 100%;
-    height: auto;
+  .card {
+    margin-bottom: 20px;
   }
 }
 ul {
@@ -37,13 +36,10 @@ footer {
 
 .titulo {
   display: flex;
-  text-align: center;
 }
 
-.Pcard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.txt-center {
+  text-align: center;
 }
 
 .img-fluid {
@@ -63,8 +59,7 @@ footer {
   background-color: #fafafb;
   border: 1px;
   border-radius: 20px;
-  padding: 3px;
-  margin: 15px;
+  padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -85,12 +80,10 @@ footer {
   }
   main {
     display: grid;
-    grid-template-areas: "titulo titulo titulo" "img-desktop img-desktop img-desktop" "noticias noticias noticias" "CIz CM CDr";
-    grid-template-columns: repeat(3, auto);
+    grid-template-areas: "noticias noticias noticias" "titulo titulo titulo" "CIz CM CDr";
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(4, auto);
-  }
-  .image-desktop {
-    grid-area: img-desktop;
+    grid-column-gap: 10px;
   }
   .noticias {
     grid-area: noticias;
